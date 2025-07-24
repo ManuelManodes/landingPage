@@ -3,10 +3,20 @@ set -e
 
 echo "🚀 Starting Flutter Web build for Vercel..."
 
-# Install Flutter
+# Install Flutter (latest stable version)
 echo "📦 Installing Flutter..."
-curl -fsSL https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.24.3-stable.tar.xz | tar -xJ
+curl -fsSL https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.32.7-stable.tar.xz | tar -xJ
+
+# Fix git ownership issues
+echo "🔧 Fixing git permissions..."
+git config --global --add safe.directory /vercel/path0/flutter
+
+# Set PATH
 export PATH="$PWD/flutter/bin:$PATH"
+
+# Disable analytics and crash reporting for CI
+echo "⚙️ Configuring Flutter for CI..."
+flutter config --no-analytics --no-cli-animations
 
 # Verify Flutter installation
 echo "✅ Verifying Flutter installation..."
