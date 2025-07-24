@@ -43,3 +43,30 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Android SDK and tools
+.android/
+adbkey*
+emu-*
+**/android/**/local.properties
+**/android/avd/
+**/android/.gradle/
+
+# System files
+.bash_history
+.zsh_history
+.vscode/settings.json
+.vscode/launch.json
+
+# Analytics and telemetry
+analytics.settings
+devices.xml
+
+# AVD (Android Virtual Device) files
+*.avd/
+s23_API_*
+
+# Cache files
+cache.img*
+bootcompleted.ini
+config.ini
