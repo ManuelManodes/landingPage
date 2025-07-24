@@ -1,0 +1,10 @@
+{
+  "name": "vertical-landing-page",
+  "version": "1.0.0",
+  "description": "Flutter web landing page",
+  "scripts": {
+    "build": "flutter build web --release --web-renderer html"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

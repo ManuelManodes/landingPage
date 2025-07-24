@@ -1,8 +1,30 @@
-# vertical_landing_page
+# Vertical Landing Page
 
-A new Flutter project.
+Un proyecto de Flutter Web con diseño moderno y gradientes.
 
-## Getting Started
+## Deploy en Vercel
+
+Este proyecto está configurado para desplegarse automáticamente en Vercel.
+
+### Configuración local para desarrollo
+
+1. Instala Flutter
+2. Ejecuta `flutter pub get`
+3. Para desarrollo: `flutter run -d chrome`
+4. Para build de producción: `flutter build web --release`
+
+### Deploy
+
+1. Conecta tu repositorio con Vercel
+2. Vercel detectará automáticamente la configuración
+3. El deploy se ejecutará automáticamente en cada push a main
+
+## Estructura del proyecto
+
+- `lib/` - Código fuente de Flutter
+- `web/` - Archivos web específicos
+- `vercel.json` - Configuración de Vercel
+- `package.json` - Scripts de build para Vercel
 
 This project is a starting point for a Flutter application.
 
