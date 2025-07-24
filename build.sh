@@ -32,7 +32,7 @@ flutter pub get
 
 # Build for web
 echo "🔨 Building for web..."
-flutter build web --release --web-renderer html --base-href /
+flutter build web --release --base-href /
 
 # Ensure the build directory exists
 if [ ! -d "build/web" ]; then
