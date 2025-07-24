@@ -5,7 +5,7 @@ class PricingView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Color(0xFFFFBD00),
+      color: Colors.transparent,
       child: Center(
         child: FittedBox(
           fit: BoxFit.contain,
@@ -14,6 +14,7 @@ class PricingView extends StatelessWidget {
             style: GoogleFonts.montserratAlternates(
               fontSize: 80,
               fontWeight: FontWeight.bold,
+              color: Colors.white,
             ),
           ),
         ),

@@ -5,7 +5,7 @@ class AboutView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Color(0xFF9e0059),
+      color: Colors.transparent,
       child: Center(
         child: FittedBox(
           fit: BoxFit.contain,
@@ -14,6 +14,7 @@ class AboutView extends StatelessWidget {
             style: GoogleFonts.montserratAlternates(
               fontSize: 80,
               fontWeight: FontWeight.bold,
+              color: Colors.white,
             ),
           ),
         ),
