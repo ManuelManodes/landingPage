@@ -26,19 +26,19 @@ class HomePage extends StatelessWidget {
   }
 
   BoxDecoration buildBoxDecoration() => BoxDecoration(
-    gradient: LinearGradient(
-      colors: [
-        Color(0xFF800f2f),
-        Color(0xFF9e0059),
-        Color(0xFF0ff0054),
-        Color(0xFFFF5400),
-        Color(0xFFFFBD00),
-      ],
-      begin: Alignment.topCenter,
-      end: Alignment.bottomCenter,
-      stops: [0.0, 0.25, 0.5, 0.75, 1.0],
-    ),
-  );
+        gradient: LinearGradient(
+          colors: [
+            Color(0xFF800f2f),
+            Color(0xFF9e0059),
+            Color(0xFF0ff054),
+            Color(0xFFFF5400),
+            Color(0xFFFFBD00),
+          ],
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+          stops: [0.0, 0.25, 0.5, 0.75, 1.0],
+        ),
+      );
 }
 
 class _HomeBody extends StatelessWidget {
